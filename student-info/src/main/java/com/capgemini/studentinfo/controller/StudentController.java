@@ -40,6 +40,8 @@ public class StudentController {
 
 	@DeleteMapping("/{rollNumber}")
 	public ResponseEntity<String> deleteStudentDetail(@PathVariable int rollNumber) {
-		return new ResponseEntity<String>("Recored Deleted Successfully",HttpStatus.OK);
+		return new ResponseEntity<String>("Recored Deleted Successfully", HttpStatus.OK);
+
 	}
+
 }
