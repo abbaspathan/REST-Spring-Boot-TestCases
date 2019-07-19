@@ -3,11 +3,14 @@ package com.capgemini.studentinfo.entity;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
+import io.swagger.annotations.ApiModelProperty;
+
 @Entity
 public class Student {
 
 	@Id
 	private int rollNumber;
+	@ApiModelProperty(value = "this is user first name", name = "firstName")
 	private String firstName;
 	private String lastName;
 
